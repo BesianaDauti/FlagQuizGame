@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <div id="loader" class="loader-overlay">
+       <div class="spinner"></div>
+       <p>Loading flags...</p>
+   </div>
+    <div class="game-container">
+        <header class="game-header">
+            <div class="player-name">👤 Player 1</div>
+            <div class="timer">⏱️ 180s</div>
+            <button class="pause-btn">⏸️ Pause</button>
+        </header>
+
+        <main class="flag-section">
+            <img src="" alt="Flag" class="flag-image" id="flag" />
+        </main>
+
+        <div class="options">
+            <button class="option-btn">Option 1</button>
+            <button class="option-btn">Option 2</button>
+            <button class="option-btn">Option 3</button>
+            <button class="option-btn">Option 4</button>
+        </div>
+
+        <div class="next-section">
+            <button class="next-btn">Next ➜</button>
+        </div>
+    </div>
+
+    <div class="modal hidden">
+        <div class="modal-content">
+            <h2>Game Paused</h2>
+            <button class="resume-btn">Resume</button>
+            <button class="restart-btn">Restart</button>
+            <button class="home-btn">Home</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
